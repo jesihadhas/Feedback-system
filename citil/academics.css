@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    background: url('Bimage.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(53, 23, 57, 0.9);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+select, textarea, button, input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#section {
+    width: 50%;
+}
+
+button {
+    background-color: #709FB0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #5C8D9B;
+}
+
+#anonymous-section {
+    margin-top: 10px;
+}

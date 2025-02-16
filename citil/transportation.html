@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportation Feedback</title>
+    <link rel="stylesheet" href="transportation.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Transportation Feedback</h2>
+        
+        <label for="travelTime">Select Travel Time:</label>
+        <select id="travelTime">
+            <option value="">-- Select --</option>
+            <option value="Morning">Morning</option>
+            <option value="Evening">Evening</option>
+            <option value="Both">Both</option>
+        </select>
+        
+        <textarea id="feedback" placeholder="Enter your feedback..."></textarea>
+        
+        <div class="rating">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+        
+        <div class="options">
+            <button id="anonymous">Anonymous</button>
+            <button id="nonAnonymous">Non Anonymous</button>
+        </div>
+        
+        <div id="nonAnonymousFields">
+            <input type="text" id="name" placeholder="Enter your name">
+            <input type="text" id="busNumber" placeholder="Enter your bus number">
+            <input type="text" id="registerNumber" placeholder="Enter your register number">
+        </div>
+        
+        <button id="submitFeedback">Submit Feedback</button>
+        <p id="successMessage">Successfully Submitted!</p>
+        
+        <script src="transportation.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess Feedback System</title>
+    <link rel="stylesheet" href="mess.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="feedback-system" class="container">
+        <h1>Mess Feedback System</h1>
+        <table>
+            <tr>
+                <th>Meal</th>
+                <th>Rating</th>
+                <th>Feedback</th>
+            </tr>
+            <tr>
+                <td>Morning Breakfast</td>
+                <td class="rating"></td>
+                <td><textarea placeholder="Give your feedback"></textarea></td>
+            </tr>
+            <tr>
+                <td>Afternoon Lunch</td>
+                <td class="rating"></td>
+                <td><textarea placeholder="Give your feedback"></textarea></td>
+            </tr>
+            <tr>
+                <td>Evening Snacks</td>
+                <td class="rating"></td>
+                <td><textarea placeholder="Give your feedback"></textarea></td>
+            </tr>
+            <tr>
+                <td>Night Dinner</td>
+                <td class="rating"></td>
+                <td><textarea placeholder="Give your feedback"></textarea></td>
+            </tr>
+        </table>
+        <button id="analyze">Analyze Today's Feedback</button>
+    </div>
+    
+    <div id="feedback-analysis" class="container">
+        <h1>Today's Feedback Analysis</h1>
+        <canvas id="feedbackChart"></canvas>
+        <button id="back">Back to Feedback</button>
+    </div>
+
+    <script src="mess.js"></script>
+</body>
+</html>

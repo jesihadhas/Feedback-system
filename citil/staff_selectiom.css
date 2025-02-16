@@ -1,0 +1,96 @@
+/* style3.css */
+
+/* Background Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #351f39, #726A95);
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main Container with Gradient */
+.staff_selection-container {
+  background: #7d7493;
+  padding: 20px;
+  border: 3px double #4e2a45; 
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  text-align: center;
+}
+
+/* Form Heading */
+.header {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Label and Input Fields */
+label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+select, textarea, input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Styling for Textarea (Complaints Section) */
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Button Styles */
+button, input[type="submit"] {
+    background-color: #7f6b91; /* Slightly different shade for buttons */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: auto;
+    margin-top: 10px;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #5b3e5a; /* Darker shade on hover */
+}
+
+/* Back Button */
+input[type="button"] {
+    background-color: #7f8c8d;
+}
+
+input[type="button"]:hover {
+    background-color: #95a5a6;
+}
+
+/* Form Centering */
+form {
+    display: flex;
+    flex-direction: column;
+  }
+
+/* Input Focus Styles */
+select:focus, textarea:focus, input:focus {
+    border-color: #3498db; /* Blue outline on focus */
+    outline: none;
+}

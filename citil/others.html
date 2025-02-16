@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Others Selection</title>
+    <link rel="stylesheet" href="others.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Others</h2>
+
+        <label for="category">Select an Option:</label>
+        <select id="category" onchange="toggleOptions()">
+            <option value="temple">Temple</option>
+            <option value="auditorium">Auditorium</option>
+            <option value="health_care">Health Care</option>
+            <option value="food_court">Food Court</option>
+            <option value="gym">Flame Fitness Studio – GYM</option>
+            <option value="nss">NSS</option>
+            <option value="yrc">Youth Red Cross</option>
+            <option value="ncc">National Cadet Corps</option>
+            <option value="xerox">Xerox Shop</option>
+            <option value="ragging">Ragging</option>
+            <option value="clubs">Clubs</option>
+        </select>
+
+        <div id="foodCourtOptions" class="hidden">
+            <label for="food_anonymity">Choose:</label>
+            <select id="food_anonymity" onchange="toggleFoodCourtInput()">
+                <option value="anonymous">Anonymous</option>
+                <option value="non_anonymous">Non-Anonymous</option>
+            </select>
+        </div>
+
+        <div id="foodCourtName" class="hidden">
+            <label for="food_name">Enter Food Court Name:</label>
+            <input type="text" id="food_name" placeholder="Enter name...">
+        </div>
+
+        <div id="clubOptions" class="hidden">
+            <label for="club">Select a Club:</label>
+            <select id="club">
+                <option value="language">Language Club</option>
+                <option value="digital_marketing">Digital Marketing Club</option>
+                <option value="calligraphy">Calligraphy Club</option>
+                <option value="mobile_apps">Mobile Apps Club</option>
+                <option value="dance">Dance Club</option>
+                <option value="debate">Debate Club</option>
+                <option value="eco">Eco Club</option>
+                <option value="finance">Financial Management Club</option>
+                <option value="music">Music Club</option>
+                <option value="robotics">Robotics Club</option>
+                <option value="photography">Photography Club</option>
+            </select>
+        </div>
+
+        <label for="description">Description:</label>
+        <textarea id="description" placeholder="Enter details..." required></textarea>
+
+        <label for="rating">Rate your experience:</label>
+        <input type="range" id="rating" min="1" max="5" value="3">
+        <span id="ratingValue" class="rating-3">3/5</span>
+
+        <button id="submitBtn" disabled>Submit</button>
+        <p id="confirmation" class="hidden">Successfully Submitted!</p>
+    </div>
+
+    <script src="others.js"></script>
+</body>
+</html>

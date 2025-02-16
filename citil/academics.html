@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Feedback</title>
+    <link rel="stylesheet" href="academics.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Academic Feedback Form</h2>
+        
+        <label>
+            <input type="checkbox" id="anonymous" onchange="toggleAnonymous()"> Submit Anonymously
+        </label>
+        
+        <div id="user-details">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            
+            <label for="regNumber">Registration Number:</label>
+            <input type="text" id="regNumber" placeholder="Enter your registration number">
+        </div>
+        
+        <label for="department">Select Department:</label>
+        <select id="department">
+            <option value="">-- Choose Department --</option>
+            <option value="AIDS">Artificial Intelligence and Data Sciences</option>
+            <option value="CSBS">Computer Science & Business Systems</option>
+            <option value="CSE">Computer Science & Engineering</option>
+            <option value="CSECY">CSE (Cyber Security)</option>
+            <option value="CSEAI">CSE (AI and Machine Learning)</option>
+            <option value="IT">Information Technology</option>
+            <option value="ECE">Electronics and Communication Engineering</option>
+            <option value="ECEACT">ECE (Advanced Comm. Technology)</option>
+            <option value="ECVLSI">EC (VLSI Design & Technology)</option>
+            <option value="BME">Biomedical Engineering</option>
+            <option value="EEE">Electrical & Electronics Engineering</option>
+            <option value="MTE">Mechatronics Engineering</option>
+            <option value="MECH">Mechanical Engineering</option>
+            <option value="CIVIL">Civil Engineering</option>
+        </select>
+        
+        <label for="year">Select Year:</label>
+        <select id="year">
+            <option value="">-- Choose Year --</option>
+            <option value="1">First Year</option>
+            <option value="2">Second Year</option>
+            <option value="3">Third Year</option>
+            <option value="4">Fourth Year</option>
+        </select>
+        
+        <label for="section">Enter Your Section:</label>
+        <input type="text" id="section" placeholder="Enter your section (e.g., A, B, C)">
+        
+        <label for="complaint">Complaint Description:</label>
+        <textarea id="complaint" rows="4" placeholder="Describe your complaint..."></textarea>
+        
+        <button onclick="submitComplaint()">Submit</button>
+    </div>
+    
+    <script src="academics.js"></script>
+</body>
+</html>

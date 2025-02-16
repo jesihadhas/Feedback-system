@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Complaint Form</title>
+    <link rel="stylesheet" href="staff_selectiom.css">
+</head>
+
+<body>
+    <div class=staff_selection-container>
+        <form id="complaintForm">
+            <h2>Staff Complaint Form</h2>
+
+            <label for="sector">Select Sector:</label>
+            <select id="sector" name="sector">
+                <option value="salary_issue">Salary Issue</option>
+                <option value="work_load">Work Load</option>
+                <option value="infrastructure">Infrastructure</option>
+                <option value="others">Others</option>
+            </select>
+
+            <label for="complaintDetails">Complaint Details:</label>
+            <textarea id="complaintDetails" name="complaintDetails" rows="4"
+                placeholder="Describe your complaint..."></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="staff_selection.js"></script>
+</body>
+
+</html>

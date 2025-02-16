@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #351F39;  /* Malbec color for the background */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.container {
+    width: 50%; /* Reduced width of container */
+    margin: 20px auto;
+    background-color: #F4E8C1;  /* Ivory-like color for the container */
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #351F39;
+    border-radius: 8px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-bottom: 15px;
+}
+
+.feedback-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.feedback-btn:hover {
+    background-color: #45a049;
+}
+
+.feedback-section {
+    display: none;
+}
+
+.feedback-form {
+    display: none;
+    margin-top: 20px;
+}
+
+.rating-section {
+    display: none;
+}
+
+.stars span {
+    font-size: 30px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.stars span:hover,
+.stars span.active {
+    color: #ff9900;
+}
+
+.anonymous-option,
+.user-info,
+.success-message {
+    display: none;
+}
+
+#successMessage {
+    color: green;
+    text-align: center;
+    font-weight: bold;
+}
+
+.feedback-btn {
+    font-size: 14px;
+}
+
+.section {
+    margin-bottom: 25px;
+}
+
+.feedback-btn {
+    font-size: 16px;
+    background-color: white;
+    color: #351F39;
+}
+
+.feedback-btn:hover {
+    background-color: #726A95;
+    color: white;
+}
+
+.feedback-section button {
+    display: block;
+    margin: auto;
+}
+
+.anonymous-option {
+    margin-bottom: 20px;
+}
+
+.user-info {
+    margin-top: 15px;
+}
+
+#userInfo {
+    margin-top: 15px;
+}
+
+#userInfo label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#userInfo input {
+    width: 60%;  /* Reduced width of input fields to make the white box smaller */
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+button {
+    width: auto;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    display: block;
+}
+
+#rating button {
+    display: block;
+    margin: auto;
+}
+
+#feedbackForm button {
+    display: block;
+    margin: auto;
+}
+
+#userInfo input {
+    margin-bottom: 30px;
+}
+
+#submitFeedbackBtn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    display: none;
+}
+
+#submitFeedbackBtn:hover {
+    background-color: #45a049;
+}

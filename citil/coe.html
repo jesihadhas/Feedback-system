@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COE Feedback Form</title>
+    <link rel="stylesheet" href="coe.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <div class="container">
+        <h2>Centre of Excellence Feedback</h2>
+        <div class="form-container">
+            <form id="feedbackForm">
+                <div class="form-group">
+                    <label for="coeSelect">Select a Centre of Excellence:</label>
+                    <select id="coeSelect" required>
+                        <option value="">-- Select COE --</option>
+                        <option value="AI & ML">AI & ML</option>
+                        <option value="Cyber Security">Cyber Security</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="IoT & Embedded Systems">IoT & Embedded Systems</option>
+                        <option value="Cloud Computing">Cloud Computing</option>
+                        <option value="Robotics">Robotics</option>
+                        <option value="Renewable Energy">Renewable Energy</option>
+                        <option value="Blockchain">Blockchain</option>
+                        <option value="3D Printing">3D Printing</option>
+                        <option value="Virtual Reality">Virtual Reality</option>
+                        <option value="Augmented Reality">Augmented Reality</option>
+                        <option value="Big Data Analytics">Big Data Analytics</option>
+                        <option value="Bioinformatics">Bioinformatics</option>
+                        <option value="Wireless Communication">Wireless Communication</option>
+                        <option value="Biomedical Engineering">Biomedical Engineering</option>
+                        <option value="VLSI & Embedded Systems">VLSI & Embedded Systems</option>
+                        <option value="Power Systems">Power Systems</option>
+                        <option value="Smart Grids">Smart Grids</option>
+                        <option value="Nanotechnology">Nanotechnology</option>
+                        <option value="Mechatronics">Mechatronics</option>
+                        <option value="Automobile Engineering">Automobile Engineering</option>
+                        <option value="Artificial Intelligence in Healthcare">Artificial Intelligence in Healthcare</option>
+                        <option value="Smart Cities">Smart Cities</option>
+                        <option value="Civil Engineering Innovations">Civil Engineering Innovations</option>
+                        <option value="Environmental Engineering">Environmental Engineering</option>
+                        <option value="Structural Engineering">Structural Engineering</option>
+                        <option value="Thermal Engineering">Thermal Engineering</option>
+                        <option value="Internet of Vehicles">Internet of Vehicles</option>
+                        <option value="Intelligent Transportation Systems">Intelligent Transportation Systems</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="feedback">Your Feedback:</label>
+                    <textarea id="feedback" rows="4" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+            <p id="message"></p>
+        </div>
+    </div>
+    <script src="coe.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>

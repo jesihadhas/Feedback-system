@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background:#351F39;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.auth-container {
+    background: #F4E8C1;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 320px;
+    margin-right: 15%;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.password-container input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px; /* Space for the eye icon */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.eye-icon {
+    width: 20px;
+    height: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #726A95;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5b567d;
+}
+
+.google-btn {
+    background: #db4437;
+}
+
+.google-btn:hover {
+    background: #c1351d;
+}
+
+#error-message, #signup-error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Hide signup form initially */
+.hidden {
+    display: none;
+}
+
+.owl-container {
+    position: absolute;
+    top: 10px;  /* Keep it at the same position */
+    margin-right: 50%;
+    width: 600px;  /* Reduce width */
+    height: 1000px; /* Reduce height */
+}
+
+#spyOwl {
+    width: 100%;  /* Scales inside container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Feedback / Report</title>
+    <link rel="stylesheet" href="library.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Library Feedback / Report</h2>
+        
+        <label for="identity">Select Identity:</label>
+        <select id="identity" onchange="toggleIdentityFields()">
+            <option value="anonymous">Anonymous</option>
+            <option value="non_anonymous">Non-Anonymous</option>
+        </select>
+        
+        <div id="identityFields" class="hidden">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            
+            <label for="registerNumber">Register Number:</label>
+            <input type="text" id="registerNumber" placeholder="Enter your register number">
+        </div>
+        
+        <label for="category">Select Category:</label>
+        <select id="category" onchange="showFields()">
+            <option value="">--Select--</option>
+            <option value="book_availability">Book Availability</option>
+            <option value="staff_behaviour">Staff Behaviour</option>
+            <option value="library_environment">Library Environment</option>
+            <option value="library_equipment">Library Equipment</option>
+        </select>
+
+        <div id="urgencyDiv" class="hidden">
+            <label for="urgency">Urgency:</label>
+            <select id="urgency">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </div>
+
+        <label for="description">Description:</label>
+        <textarea id="description" rows="4" placeholder="Enter your feedback..."></textarea>
+
+        <div id="ratingDiv">
+            <label>Rating:</label>
+            <div class="stars">
+                <span onclick="rate(1)">&#9733;</span>
+                <span onclick="rate(2)">&#9733;</span>
+                <span onclick="rate(3)">&#9733;</span>
+                <span onclick="rate(4)">&#9733;</span>
+                <span onclick="rate(5)">&#9733;</span>
+            </div>
+        </div>
+
+        <button class="submit-btn" onclick="submitFeedback()">Submit</button>
+        <p class="success-message" id="successMessage">Successfully Submitted!</p>
+    </div>
+
+    <script src="library.js"></script>
+</body>
+</html>

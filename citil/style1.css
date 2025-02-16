@@ -1,0 +1,157 @@
+/* 🌟 Solid Background */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #351F39;  /* Updated solid background */
+    color: white; /* Ensures text is readable */
+}
+
+/* 📌 Centered Container */
+.container {
+    width: 50%;
+    background: white;
+    padding: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 0.8s forwards;
+    margin-top: 80px;  /* Prevents overlap with taskbar */
+    color: black; /* Text inside container is readable */
+}
+
+/* ✨ Fade-in Animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 🔹 Taskbar Styling */
+.taskbar {
+    background-color: #5e4f76;
+    overflow: hidden;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.taskbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.taskbar ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.taskbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.taskbar ul li a:hover {
+    background-color: #726a95; /* Button color on hover */
+    border-radius: 5px;
+}
+
+/* 🎨 Button Styles */
+.btn {
+    padding: 15px 25px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    display: inline-block;
+    width: 200px;
+    background-color: #709fb0; /* Updated button color */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover Effect */
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+    background-color: #726a95; /* Slightly darker shade on hover */
+}
+/* Vertical buttons styling */
+.buttons {
+    display: flex;
+    flex-direction: column;  /* Stack buttons vertically */
+    align-items: center;  /* Center buttons */
+    gap: 15px;  /* Space between buttons */
+    margin-top: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #726A95;  /* Your button color */
+    color: white;
+    text-decoration: none;  /* Ensure no underline */
+    text-align: center;
+    border-radius: 5px;
+    width: 200px;  /* Adjust width */
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #726a95;  /* Slight hover effect */
+  }
+  
+  /* Prevent text underline when the link is clicked or focused */
+  .btn:focus, .btn:active {
+    outline: none;
+    text-decoration: none; /* Ensures no underline */
+  }
+  #overviewBtn {
+    background: linear-gradient(45deg, #4CAF50, #8BC34A);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    position: fixed;  /* Fixed positioning relative to the viewport */
+    top: 55px;        /* Distance from the top of the screen */
+    right: 20px;      /* Distance from the right of the screen */
+    z-index: 1000;    /* Ensures it's above other elements */
+}
+
+#overviewBtn:hover {
+    background: linear-gradient(45deg, #45a049, #7CB342);
+    transform: translateY(-2px);
+}
+
+#overviewBtn:active {
+    background: linear-gradient(45deg, #388e3c, #689f38);
+    transform: translateY(0);
+}
+
+#overviewBtn:focus {
+    outline: none;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Complaint</title>
+    <link rel="stylesheet" href="laundry.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Laundry Complaint Form</h1>
+        <form id="laundryForm">
+            <label for="issue">Select Issue:</label>
+            <select id="issue" name="issue">
+                <option value="missing">Missing Clothes</option>
+                <option value="late">Late Delivery</option>
+                <option value="damage">Damaged Clothes</option>
+                <option value="others">Others</option>
+            </select>
+
+            <label for="details">Additional Details:</label>
+            <textarea id="details" name="details" rows="3" placeholder="Describe the issue..."></textarea>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="anonymous" name="anonymous">
+                <label for="anonymous">Submit Anonymously</label>
+            </div>
+
+            <div id="contactSection">
+                <label for="contact">Your Contact Details:</label>
+                <input type="text" id="contact" name="contact" placeholder="Enter your email or phone">
+            </div>
+
+            <label>Rate Our Service:</label>
+            <div class="star-rating">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+
+            <button type="submit" class="btn">Submit Complaint</button>
+        </form>
+
+        <!-- Success Message (Initially Hidden) -->
+        <div id="successMessage" class="success-message" style="display: none;">
+            ✔️ Submitted Successfully!
+        </div>
+    </div>
+
+    <script src="laundry.js"></script>
+</body>
+</html>

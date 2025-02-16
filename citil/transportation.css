@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://tse1.mm.bing.net/th?id=OIP.UpZZC5EN8-ScOTPTyxmsWwHaE8&pid=Api.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Adjust opacity here for lighter shade */
+    filter: blur(5px); /* Apply the blur effect */
+    z-index: -1; /* Make sure it's behind the content */
+}
+
+.container {
+    background: #351F39;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    max-width: 600px;
+    color: white;
+}
+
+select, textarea, button, input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.star {
+    font-size: 30px;
+    cursor: pointer;
+    color: gray;
+}
+
+.star:hover, .star.selected {
+    color: gold;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.options button {
+    width: 45%;
+    background: lightgray;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.options button.selected {
+    background: #007bff;
+    color: white;
+}
+
+#nonAnonymousFields {
+    display: none;
+    margin-top: 10px;
+}
+
+#submitFeedback {
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#successMessage {
+    display: none;
+    color: green;
+    margin-top: 10px;
+    font-weight: bold;
+}

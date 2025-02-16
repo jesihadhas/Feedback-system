@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Feedback & Report</title>
+    <link rel="stylesheet" href="hostel.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hostel Feedback and Report</h1>
+
+        <div class="section">
+            <button class="feedback-btn" onclick="showSection('facilities')">1. Facilities and Maintenance Issues</button>
+            <button class="feedback-btn" onclick="showSection('cleanliness')">2. Cleanliness/Hygiene Issues</button>
+            <button class="feedback-btn" onclick="showSection('security')">3. Security and Safety</button>
+            <button class="feedback-btn" onclick="showSection('roommate')">4. Roommate and Noise Complaints</button>
+            <button class="feedback-btn" onclick="showSection('others')">5. Others</button>
+        </div>
+
+        <div id="facilities" class="feedback-section">
+            <h2>Facilities and Maintenance Issues</h2>
+            <button onclick="proceedToFeedback()">Proceed to Feedback/Report</button>
+        </div>
+
+        <div id="cleanliness" class="feedback-section">
+            <h2>Cleanliness/Hygiene Issues</h2>
+            <button onclick="proceedToFeedback()">Proceed to Feedback/Report</button>
+        </div>
+
+        <div id="security" class="feedback-section">
+            <h2>Security and Safety</h2>
+            <button onclick="proceedToFeedback()">Proceed to Feedback/Report</button>
+        </div>
+
+        <div id="roommate" class="feedback-section">
+            <h2>Roommate and Noise Complaints</h2>
+            <button onclick="proceedToFeedback()">Proceed to Feedback/Report</button>
+        </div>
+
+        <div id="others" class="feedback-section">
+            <h2>Others</h2>
+            <button onclick="proceedToFeedback()">Proceed to Feedback/Report</button>
+        </div>
+
+        <!-- Feedback Form -->
+        <div id="feedbackForm" class="feedback-form">
+            <h2>Report Your Problem</h2>
+            <textarea id="feedbackText" rows="4" cols="50" placeholder="Write your feedback here..."></textarea><br>
+            <button onclick="nextPage()">Next</button>
+        </div>
+
+        <!-- Star Rating -->
+        <div id="rating" class="rating-section">
+            <h2>Rate Your Hostel</h2>
+            <div class="stars">
+                <span class="star" onclick="rate(1)">&#9733;</span>
+                <span class="star" onclick="rate(2)">&#9733;</span>
+                <span class="star" onclick="rate(3)">&#9733;</span>
+                <span class="star" onclick="rate(4)">&#9733;</span>
+                <span class="star" onclick="rate(5)">&#9733;</span>
+            </div>
+            <p>Rating: <span id="star-rating">0</span>/5</p>
+        </div>
+
+        <!-- Anonymous Option -->
+        <div id="anonymousOption" class="anonymous-option">
+            <h3>Choose Feedback Type</h3>
+            <input type="radio" id="anonymous" name="feedbackType" onclick="toggleInputFields()" /> Anonymous
+            <input type="radio" id="non-anonymous" name="feedbackType" onclick="toggleInputFields()" /> Non-Anonymous
+        </div>
+
+        <div id="userInfo" class="user-info">
+            <label for="hotel-name">Hostel Name:</label>
+            <input type="text" id="hotel-name" placeholder="Enter Hostel Name"><br>
+            <label for="room-number">Room Number:</label>
+            <input type="text" id="room-number" placeholder="Enter Room Number"><br>
+        </div>
+
+        <!-- Submit Button after Anonymousity Selection -->
+        <button id="submitFeedbackBtn" onclick="submitFeedback()">Submit Feedback</button>
+
+        <div id="successMessage" class="success-message">
+            <p>Feedback Successfully Submitted!</p>
+        </div>
+
+        <button onclick="goBack()" style="display: none;" id="backButton">Back</button>
+    </div>
+
+    <script src="hostel.js"></script>
+</body>
+</html>
